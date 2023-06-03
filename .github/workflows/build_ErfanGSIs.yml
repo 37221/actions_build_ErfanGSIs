@@ -14,9 +14,10 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://bigota.d.miui.com/20.4.27/miui_MIMIX3_20.4.27_8f7879221b_10.0.zip
-  ROM_NAME: MIUI
-  BUILD_TYPE: ab
+  ROM_URL: https://120-201-131-67.d.cjjd15.com:30443/download-cdn.123pan.cn/123-315/73447ba5/1702477-0/73447ba5b03f6cf5c0595d112bc3913b/c-m4?v=5&t=1685899768&s=16858997684ee7a821010f5b7a55559195e2f07fd2&r=FZVBYV&filename=JOYUI14Beta2.5.1.7z&x-mf-biz-cid=e81dbfca-4e66-4a94-aff4-d50cf7938246-a0d664&auto_redirect=0&xmfcid=76513ba8-1495-4944-8dca-265573c2ed7e-0-cd8a62355
+  
+  ROM_NAME: JOYUI
+  BUILD_TYPE: aonly
   TZ: Asia/Shanghai
 
 jobs:
@@ -61,7 +62,7 @@ jobs:
          run: |
               cd $GITHUB_WORKSPACE/ErfanGSIs/output
               curl -sL https://git.io/file-transfer | sh
-              ./transfer wet ./final/GSI.zip
+              ./transfer gof ./final/GSI.zip
 
          
             
